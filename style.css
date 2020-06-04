@@ -1,0 +1,221 @@
+/* Based on meyerweb.com/eric/tools/css/reset (v2.0 | 20110126 | License: public domain) */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url("images/dot-grid.png");
+}
+
+/* Header Logo*/
+#header {
+  background: #17375e;
+  color: #ffff;
+  cursor: default;
+  height: 4.5em;
+  left: 0;
+  line-height: 3.25em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+.logo img {
+  background-position: left center;
+  background-size: auto 100%;
+  left: 1.25em;
+  line-height: 0;
+  margin-left: 2.5;
+  padding: 0;
+  position: absolute;
+  top: 0;
+}
+
+/* Navigation */
+.navbar {
+  margin-left: 25%;
+  margin-right: 25%;
+  box-sizing: border-box;
+}
+
+#header nav {
+  margin-top: 0.8em;
+  height: inherit;
+  line-height: inherit;
+  position: absolute;
+  right: 0.75em;
+  top: 0;
+  vertical-align: middle;
+}
+
+#header nav > ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+#header nav > ul > li {
+  display: inline-block;
+  padding-left: 0;
+}
+
+#header nav > ul > li > ul {
+  display: none;
+}
+
+#header nav > ul > li a {
+  color: #ffff;
+  text-decoration: none;
+  display: inline-block;
+  height: 2em;
+  line-height: 1.95em;
+  padding: 0 1em;
+  border-radius: 6px;
+}
+
+#header nav > ul > li a:hover {
+  color: rgb(195, 195, 195);
+}
+
+/* Banner */
+#banner-heading {
+  background-attachment: scroll, fixed;
+  background-color: #666;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../../images/crane-3038640-1024x683-1.webp");
+  background-position: top left, center center;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  color: #fff;
+  padding: 12em 0 20em 0;
+  text-align: center;
+  text-shadow: 0.5px 0.5px black;
+}
+
+#banner-heading h2 {
+  font-size: 4em;
+  line-height: 1em;
+  margin: 0 0 0.5em 0;
+  padding: 0;
+}
+
+#banner-heading p {
+  font-size: 1.8em;
+  margin-bottom: 1.75em;
+}
+
+#banner-heading a {
+  text-decoration: none;
+  background-color: #fe5b2d;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  color: #ffff;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px #000000;
+  border: 2px #000000;
+}
+
+#banner-heading a:hover {
+  background-color: rgb(180, 47, 10);
+}
+
+/* Main */
+body #main {
+  margin-top: -7em;
+  background-color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: calc(100% - 8em);
+  width: 105em;
+  border-radius: 0.5rem;
+}
+
+/* About */
