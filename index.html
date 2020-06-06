@@ -27,7 +27,7 @@
                         <li><a href="#">Resources</a></li>
                         <li><a href="#">Contact Us</a></li>
                         <li><a href="#">Log In</a></li>
-                        <li><a href="#">Sign In</a></li>
+                        <li><a href="#">Sign Up</a></li>
                     </ul>
                 </nav>
             </div>
@@ -117,33 +117,44 @@
             <!-- Contact us -->
             <section id="contact" class="box special">
                 <header>
-                    <h2>Contact Us</h2>
-                    <p>Get in touch</p>
+                    <h2>Get in Touch</h2>
+                    <p>You need more information about us?</p>
                 </header>
-                <div class="box">
-                    <form method="POST" action="#">
-                        <div class="row gtr-50 gtr-uniform">
-                            <div class="col-6 col-12-mobilep">
-                                <input type="text" name="name" id="name" value="" placeholder="Name" />
+                <div class="outer-box-contact">
+                    <div class="left-box">
+                        <form method="POST" action="#">
+                            <div class="row gtr-50 gtr-uniform">
+                                <div class="contact-us-header">Contact Us</div>
+                                <div class="col-6 col-12-mobilep">
+                                    <input type="text" name="name" id="name" value="" placeholder="Name" />
+                                </div>
+                                <div class="col-6 col-12-mobilep">
+                                    <input type="email" name="email" id="email" value="" placeholder="Email" />
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" name="subject" id="subject" value="" placeholder="Subject" />
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="message" id="message" placeholder="Enter your message"
+                                        rows="6"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <ul class="actions special">
+                                        <li><input type="submit" value="Send Message" class="send" /></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="col-6 col-12-mobilep">
-                                <input type="email" name="email" id="email" value="" placeholder="Email" />
-                            </div>
-                            <div class="col-12">
-                                <input type="text" name="subject" id="subject" value="" placeholder="Subject" />
-                            </div>
-                            <div class="col-12">
-                                <textarea name="message" id="message" placeholder="Enter your message"
-                                    rows="6"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <ul class="actions special">
-                                    <li><input type="submit" value="Send Message" /></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
+                    <div class="right-box">
+                        <h1 class="right-box-header">Other ways to connect</h1>
+                        <p>You can talk to our representative</p>
+                        <hr>
+                        <a href="#"><img src="images/icons8-chat-48 (2).png" alt=""></a>
+                        <p class="icon-description">Get support now</p>
+                    </div>
                 </div>
+
             </section>
         </section>
 
