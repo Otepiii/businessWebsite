@@ -91,6 +91,12 @@ video {
 
 body {
   background-image: url("images/dot-grid.png");
+  color: #777;
+  font-family: "Ariel", sans-serif;
+  font-size: 16pt;
+  font-weight: 300;
+  line-height: 1.65em;
+  letter-spacing: -0.015em;
 }
 
 /* Header Logo*/
@@ -109,6 +115,7 @@ body {
 .logo img {
   background-position: left center;
   background-size: auto 100%;
+  margin-top: 9px;
   left: 1.25em;
   line-height: 0;
   margin-left: 2.5;
@@ -167,15 +174,15 @@ body {
 #banner-heading {
   background-attachment: scroll, fixed;
   background-color: #666;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../../images/crane-3038640-1024x683-1.webp");
   background-position: top left, center center;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
   color: #fff;
-  padding: 12em 0 20em 0;
+  padding: 20em 0 20em 0;
   text-align: center;
-  text-shadow: 0.5px 0.5px black;
+  text-shadow: 0.1px 0.1px black;
 }
 
 #banner-heading h2 {
@@ -207,15 +214,141 @@ body {
 
 /* Main */
 body #main {
-  margin-top: -7em;
-  background-color: #fff;
+  margin-top: -9em;
 }
 
 .container {
   margin: 0 auto;
-  max-width: calc(100% - 8em);
-  width: 105em;
+  max-width: calc(100% - 5em);
+  width: 95rem;
   border-radius: 0.5rem;
 }
 
-/* About */
+/* About Section*/
+.box {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 0 2px #e5e5e5;
+  margin: 6em 0 5em 0;
+  padding: 5em;
+}
+
+.box.special h2 {
+  text-align: center;
+  font-size: 2.25em;
+  line-height: 1.5em;
+  letter-spacing: -0.035em;
+  font-weight: 300;
+}
+
+.box.special h3 {
+  font-size: 1.75em;
+  line-height: 1.5em;
+  letter-spacing: -0.025em;
+}
+
+/* places the three columns under about */
+.box-content {
+  display: grid;
+  justify-self: center;
+  text-align: center;
+  grid-template-areas: "box-left box-middle box-right";
+}
+
+/* Features */
+#features img {
+  width: 500px;
+  height: 200px;
+}
+
+#features {
+  position: relative;
+  z-index: 3;
+}
+
+.features-row {
+  margin-top: 3rem;
+  display: grid;
+  justify-self: center;
+  text-align: center;
+  grid-template-areas:
+    "top-left top-right"
+    "bottom-left bottom-right";
+}
+
+.features-row img {
+  margin: 2rem 2rem;
+  box-shadow: 0 5px 3px 1px #5d5a5a;
+  border-radius: 5px;
+}
+
+/* Resources */
+#banner {
+  background-attachment: scroll, fixed;
+  background-color: #666;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/victoria-kure-wu-583580-unsplash-1-1024x768\ \(1\).jpg");
+  background-position: top left, center center;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  color: #fff;
+  padding: 13em 0 20em 0;
+  text-align: center;
+  text-shadow: 0.1px 0.1px black;
+  margin-top: -220px;
+  margin-bottom: -372px;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#banner h2 {
+  font-size: 2em;
+  line-height: 0.5em;
+  margin: 0 0 0.5em 0;
+  padding: 0;
+}
+
+#banner p {
+  font-size: 0.9em;
+  margin-bottom: 0.8em;
+}
+
+#banner a {
+  text-decoration: none;
+  background-color: #fe5b2d;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  color: #ffff;
+  font-size: 1rem;
+  text-shadow: 1px 1px #000000;
+  border: 2px #000000;
+}
+
+.top-left {
+  box-shadow: 3px 3px rgb(190, 187, 187);
+  padding: 15px;
+}
+
+.top-right {
+  box-shadow: 0 3px rgb(190, 187, 187);
+  padding: 15px;
+}
+
+.bottom-left {
+  box-shadow: 3px 0 rgb(190, 187, 187);
+  padding: 15px;
+}
+
+.bottom-right {
+  padding: 15px;
+}
+
+/* Contact us */
+#contact {
+  position: relative;
+}
+
+
