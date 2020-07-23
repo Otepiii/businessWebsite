@@ -111,6 +111,7 @@ body {
   top: 0;
   width: 100%;
   z-index: 10000;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 .logo img {
   background-position: left center;
@@ -467,4 +468,71 @@ footer li {
   text-align: center;
   margin: auto;
   padding: 1.4em;
+}
+
+/* Resources Page */
+
+#main-resources {
+  margin: 0 auto;
+  max-width: calc(100% - 5em);
+  width: 95rem;
+  border-radius: 0.5rem;
+  margin-top: 14%;
+  box-shadow: 0 10px 6px 3.5px #e5e5e5;
+  background-color: #ffffff;
+  height: auto;
+}
+
+#title h1 {
+  font-size: 4em;
+  text-align: center;
+  padding: 20rem 5rem;
+  color: #ffffff;
+  background-color: #17375e;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.search-guides h2 {
+  font-size: 3.9rem;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 7%;
+}
+
+.search-bar {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.search-guides label {
+  margin: 10% 0 0 9%;
+  position: relative;
+  font-size: 2rem;
+}
+
+.search-bar input {
+  width: 80%;
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgb(175, 173, 173);
+  font-size: 2rem;
+}
+
+.search-bar button {
+  text-decoration: none;
+  background-color: #fe5b2d;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  color: #ffff;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px #000000;
+  border: 2px #000000;
+  margin-left: 5px;
+}
+
+.search-bar button:hover {
+  background-color: rgb(180, 47, 10);
 }
