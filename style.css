@@ -324,7 +324,6 @@ body #main {
   border-radius: 0.8rem;
   color: #ffff;
   font-size: 1rem;
-  text-shadow: 1px 1px #000000;
   border: 2px #000000;
 }
 
@@ -647,4 +646,19 @@ footer li {
 
 .contact-support button:hover {
   background-color: rgb(180, 47, 10);
+}
+
+.icon {
+  background-image: url("images/icons8-chat-48\ \(2\).png");
+  background-repeat: no-repeat;
+  float: right;
+  position: fixed;
+
+  bottom: 1%;
+  right: 2%;
+}
+
+.icon img {
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
 }
