@@ -742,8 +742,8 @@ footer li {
   .left-box {
     margin: 0 auto;
     width: 85%;
-    padding: 3rem;
-    margin-bottom: 0;
+    padding: 10px 66px 0 20px;
+    margin-bottom: 0.5rem;
     box-shadow: none;
   }
 
@@ -813,5 +813,11 @@ footer li {
     display: grid;
     padding: 0;
     margin: 0;
+  }
+  .box.special h3 {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    letter-spacing: -0.025em;
+    font-weight: 500;
   }
 }
