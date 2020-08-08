@@ -740,4 +740,42 @@ footer li {
     border-radius: 10px;
     box-shadow: 0 3px 0 2px #e5e5e5;
   }
+
+  #contact {
+    height: auto;
+  }
+  #contact header {
+    color: #fff;
+    background: linear-gradient(rgba(18, 55, 97, 0.75), rgba(18, 55, 97, 0.75)),
+      url("images/istock_crop-1024x683\ \(1\).jpg");
+    background-position: 70% 30%;
+    background-size: cover;
+    /* width: 100%; */
+    border-radius: 10px 10px 0 0;
+    padding: 5px 0 8px 0;
+    text-align: center;
+  }
+
+  .outer-box-contact {
+    display: grid;
+    grid-template-areas:
+      "left-box"
+      "right-box";
+    width: 100%;
+  }
+  .left-box {
+    margin: 0 auto;
+    width: auto;
+    padding: 10px 66px 0 20px;
+    margin-bottom: 3rem;
+    box-shadow: none;
+  }
+
+  .left-box .send {
+    width: auto;
+  }
+
+  .right-box {
+    display: none;
+  }
 }
