@@ -350,7 +350,7 @@ body #main {
   display: grid;
   border-radius: 10px;
   box-shadow: 0 3px 10px 2px #e5e5e5;
-  margin: 5em 0 5em 0;
+  margin: 3.8em 0 5em 0;
   padding: 0;
   height: 45rem;
 }
@@ -406,20 +406,13 @@ body #main {
   margin: 10px 0 4px 0;
 }
 .left-box .send {
-  text-align: center;
   text-decoration: none;
   background-color: #fe5b2d;
   padding: 1rem;
   border-radius: 0.8rem;
   color: #ffff;
-  font-size: 1rem;
+  font-size: 1.2rem;
   border: 2px #000000;
-  align-items: center;
-  display: block;
-  display: inline-block;
-  width: 45%;
-  /* float: left; */
-  margin-left: 3px;
 }
 
 .left-box .send:hover {
@@ -740,7 +733,7 @@ footer li {
       url("images/istock_crop-1024x683\ \(1\).jpg");
     background-position: 70% 30%;
     background-size: cover;
-    /* width: 100%; */
+    width: 100%;
     border-radius: 10px 10px 0 0;
     padding: 5px 0 8px 0;
     text-align: center;
@@ -748,9 +741,9 @@ footer li {
 
   .left-box {
     margin: 0 auto;
-    width: auto;
+    width: 85%;
     padding: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 0;
     box-shadow: none;
   }
 
@@ -758,8 +751,21 @@ footer li {
     width: auto;
   }
 
+  .right-box {
+    display: grid;
+  }
+
   .right-box > hr {
     display: none;
+  }
+  .right-box img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon-description {
+    margin: 0 auto;
   }
 }
 
@@ -781,6 +787,11 @@ footer li {
       "right-box";
     width: 100%;
   }
+  .right-box {
+    display: grid;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 @media (max-width: 500px) {
@@ -796,5 +807,11 @@ footer li {
     text-align: center;
     font-size: 1rem;
     display: grid;
+  }
+
+  .right-box {
+    display: grid;
+    padding: 0;
+    margin: 0;
   }
 }
