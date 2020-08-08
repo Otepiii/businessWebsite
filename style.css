@@ -234,7 +234,7 @@ body #main {
 }
 
 #about {
-  box-shadow: 0 3px 0 2px #e5e5e5;
+  box-shadow: 0 3px 3px 0.8px #e5e5e5;
 }
 
 .box.special h2 {
@@ -320,7 +320,7 @@ body #main {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
-  box-shadow: 0 3px 0 2px #e5e5e5;
+  box-shadow: 1px 3px 4px 4px #686868;
 }
 
 #banner h2 {
@@ -671,7 +671,7 @@ footer li {
   }
 
   .box {
-    padding: 0.5rem;
+    padding: 1rem;
   }
   .box-content {
     display: grid;
