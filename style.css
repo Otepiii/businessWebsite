@@ -838,4 +838,8 @@ footer li {
   .burger {
     display: inline-block;
   }
+
+  .logo img {
+    position: relative;
+  }
 }
