@@ -676,7 +676,7 @@ footer li {
     display: grid;
     position: relative;
     justify-self: center;
-    text-align: center;
+    text-align: left;
     grid-template-areas:
       "box-left"
       "box-middle"
@@ -694,7 +694,7 @@ footer li {
     margin-top: 3rem;
     display: block;
     justify-self: center;
-    text-align: center;
+    text-align: left;
     grid-template-areas:
       "top-left"
       "top-right"
