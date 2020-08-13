@@ -171,6 +171,12 @@ body {
   color: rgb(195, 195, 195);
 }
 
+.burger {
+  font-size: 1.5rem;
+  margin-right: 10%;
+  display: none;
+}
+
 /* Banner */
 #banner-heading {
   background-attachment: scroll, fixed;
@@ -821,6 +827,15 @@ footer li {
   #features img {
     height: 100%;
     width: 100%;
+
     margin: 0 auto;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .burger {
+    display: inline-block;
   }
 }
