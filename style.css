@@ -818,7 +818,8 @@ footer li {
 
 @media (max-width: 500px) {
   #banner-heading {
-    padding: 18em 0 20em 0;
+    padding: 7em 0 20em 0;
+    background-size: auto;
     height: 10vh;
   }
   #contact header {
