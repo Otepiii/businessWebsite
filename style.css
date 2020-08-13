@@ -634,7 +634,6 @@ footer li {
   border-radius: 0.8rem;
   color: #ffff;
   font-size: 1.2rem;
-  text-shadow: 1px 1px #000000;
   border: 2px #000000;
   margin-left: 5%;
   margin-bottom: 8%;
@@ -905,15 +904,53 @@ footer li {
   }
 
   #title h1 {
-    font-size: 1.5em;
-    padding: 15rem 1rem;
+    font-size: 2.2em;
+    padding: 15rem 0;
   }
 
   .search-guides h2 {
-    font-size: 1.3em;
+    font-size: 2em;
   }
 
   .search-guides label {
     font-size: 0.9em;
+  }
+
+  .search-bar input {
+    font-size: 1.5em;
+  }
+
+  .guides-tutorials h1 {
+    font-size: 1.3em;
+    width: 100%;
+  }
+
+  .guides-tutorials p {
+    font-size: 0.9em;
+  }
+  .topic h1 {
+    font-size: 2em;
+  }
+
+  .topics h1 {
+    font-size: 1.3em;
+  }
+
+  .topics p {
+    font-size: 0.9em;
+  }
+
+  .contact-support {
+    padding-top: 10%;
+    background-color: rgb(169, 203, 230);
+    padding-top: auto 0;
+    line-height: 2rem;
+  }
+  .contact-support h1 {
+    font-size: 1.8em;
+  }
+
+  .contact-support p {
+    font-size: 1em;
   }
 }
