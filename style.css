@@ -821,6 +821,8 @@ footer li {
     padding: 7em 0 20em 0;
     background-size: auto;
     height: 10vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("images/crane-3038640-1024x683-1.webp");
   }
 
   body #main {
