@@ -822,6 +822,11 @@ footer li {
     background-size: auto;
     height: 10vh;
   }
+
+  body #main {
+    margin-top: -5em;
+  }
+
   #contact header {
     color: #fff;
     background: linear-gradient(rgba(18, 55, 97, 0.75), rgba(18, 55, 97, 0.75)),
