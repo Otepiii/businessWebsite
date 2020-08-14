@@ -873,6 +873,10 @@ footer li {
     right: 0;
   }
 
+  .main-nav li {
+    margin-top: 3rem;
+  }
+
   .nav-active {
     transform: translateY(4.15%) !important;
   }
