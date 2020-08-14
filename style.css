@@ -858,10 +858,11 @@ footer li {
     overflow-y: hidden;
   }
   .main-nav {
+    background-attachment: scroll;
     opacity: 0.9;
     z-index: 3;
     position: fixed;
-    height: 80vh;
+    height: 89vh;
     top: 8vh;
     background-color: #17375e;
     display: flex;
