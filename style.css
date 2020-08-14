@@ -110,7 +110,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10000;
+  z-index: 2;
   box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 .logo img {
@@ -174,6 +174,11 @@ body {
 .burger {
   font-size: 2.5rem;
   margin-right: 10%;
+  display: none;
+}
+
+.close-burger {
+  font-size: 2.5rem;
   display: none;
 }
 
@@ -844,6 +849,39 @@ footer li {
   }
 }
 
+@media (max-width: 680px) {
+  .burger {
+    display: block;
+  }
+
+  body {
+    overflow-y: hidden;
+  }
+  .main-nav {
+    opacity: 0.9;
+    z-index: 3;
+    position: fixed;
+    height: 80vh;
+    top: 8vh;
+    background-color: #17375e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateY(-200%);
+    transition: transform 0.5s ease-in;
+    right: 0;
+  }
+
+  .nav-active {
+    transform: translateY(3%) !important;
+  }
+
+  .close-burger {
+    display: inline;
+  }
+}
+
 @media (max-width: 500px) {
   #banner-heading {
     padding: 7em 0 20em 0;
@@ -889,10 +927,6 @@ footer li {
     width: 100%;
 
     margin: 0 auto;
-  }
-
-  .main-nav {
-    display: none;
   }
 
   .burger {
