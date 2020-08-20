@@ -2,7 +2,7 @@ const express = require("express")
 const app = express()
 
 // Import Routes
-const authRoute = require("./routes/auth")
+const authRoute = require("./app/routes/auth")
 
 // Routes Middlewares
 app.use("/api/user", authRoute)
