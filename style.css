@@ -397,6 +397,10 @@ body #main {
   border: 2px #000000;
 }
 
+#banner a:hover {
+  background-color: rgb(180, 47, 10);
+}
+
 /* Contact us */
 #contact {
   display: grid;
@@ -669,7 +673,7 @@ footer li {
   margin: auto;
 }
 
-.contact-support button {
+/* .contact-support button {
   font-size: 3rem;
   width: auto;
   margin: auto;
@@ -687,6 +691,10 @@ footer li {
 
 .contact-support button:hover {
   background-color: rgb(180, 47, 10);
+} */
+
+.right-box img:hover {
+  filter: brightness(50%);
 }
 
 .icon {
@@ -707,6 +715,10 @@ footer li {
   .banner-video {
     margin-left: 10%;
   }
+}
+
+.icon:hover {
+  filter: brightness(50%);
 }
 @media (max-width: 1425px) {
   #banner-heading h2 {
@@ -920,6 +932,11 @@ footer li {
   .features-row {
     text-align: left;
   }
+
+  .features-video iframe {
+    width: 55%;
+    height: 40%;
+  }
 }
 
 @media (max-width: 680px) {
@@ -960,7 +977,7 @@ footer li {
   #banner-heading {
     padding: 7em 0 20em 0;
     background-size: cover;
-    height: 39vh;
+    height: 43vh;
     -webkit-background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("images/crane-3038640-1024x683-1.webp");
   }
@@ -970,7 +987,7 @@ footer li {
   }
 
   .banner-video iframe {
-    width: 90%;
+    width: 80%;
   }
 
   #contact header {
@@ -1005,6 +1022,11 @@ footer li {
     width: 100%;
 
     margin: 0 auto;
+  }
+
+  .features-video iframe {
+    width: 80%;
+    height: 60%;
   }
 
   .burger {
