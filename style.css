@@ -336,6 +336,27 @@ body #main {
   padding: 15px;
 }
 
+.features-video {
+  position: relative;
+  text-align: center;
+  /* box-shadow: 3px 3px 3px 3px #666; */
+  /* width: 60%; */
+  padding: 0;
+}
+
+.features-video iframe {
+  /* margin: 0 auto; */
+  /* display: grid; */
+  /* position: relative; */
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #666;
+  border-radius: 9px;
+  box-shadow: 0 3px 3px 3px #666;
+
+  /* width: 60%; */
+}
+
 /* Resources */
 #banner {
   background-color: #666;
@@ -938,14 +959,18 @@ footer li {
 @media (max-width: 500px) {
   #banner-heading {
     padding: 7em 0 20em 0;
-    background-size: auto;
-    height: 10vh;
+    background-size: cover;
+    height: 39vh;
     -webkit-background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("images/crane-3038640-1024x683-1.webp");
   }
 
   body #main {
     margin-top: -5em;
+  }
+
+  .banner-video iframe {
+    width: 90%;
   }
 
   #contact header {
