@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Partner</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
@@ -28,9 +34,7 @@
               <li><a href="#">Sign Up</a></li> -->
               <div class="close-burger">X</div>
             </ul>
-            <div class="burger">
-              &#9776;
-            </div>
+            <div class="burger">&#9776;</div>
           </nav>
         </div>
       </header>
@@ -229,16 +233,33 @@
               <h1 class="right-box-header">Other ways to connect</h1>
               <p>You can talk to our representative</p>
               <hr />
-              <a href="#"><img src="images/icons8-chat-48 (2).png" alt="" /></a>
+              <a>
+                <img src="images/icons8-chat-48 (2).png" alt="" id="chat-btn2"
+              /></a>
               <p class="icon-description">Get support now</p>
             </div>
           </div>
         </section>
       </section>
 
-      <div class="icon"><img src="images/icons8-chat-48 (2).png" alt="" /></div>
+      <div class="icon">
+        <img src="images/icons8-chat-48 (2).png" alt="" id="chat-btn" />
+      </div>
 
-      <div class="chat-popup"></div>
+      <section class="chat-popup">
+        <div class="chat-header">Customer Success</div>
+        <div class="chat-area">
+          <div class="income-msg">
+            <img src="images/person.jpg" alt="" class="avatar" />
+            <span class="msg">Hi, how can I help you?</span>
+          </div>
+          <div class="input-area">
+            <input type="text" />
+            <button id="file-btn"><i class="fas fa-paperclip"></i></button>
+            <button class="submit"><i class="fas fa-paper-plane"></i></button>
+          </div>
+        </div>
+      </section>
 
       <!-- footer -->
       <footer id="footer">
