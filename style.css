@@ -1,3 +1,4 @@
+@import url("modal.css");
 /* Based on meyerweb.com/eric/tools/css/reset (v2.0 | 20110126 | License: public domain) */
 
 html,
@@ -97,6 +98,18 @@ body {
   font-weight: 300;
   line-height: 1.65em;
   letter-spacing: -0.015em;
+  /* overflow: hidden; */
+}
+
+/* Coming soon tag */
+.coming-soon-tag img {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  z-index: 5;
 }
 
 /* Header Logo*/
@@ -288,8 +301,22 @@ body #main {
   justify-self: center;
   text-align: center;
   grid-template-areas: "box-left box-middle box-right";
+  grid-template-columns: repeat(3, 1fr);
 }
 
+.box-left {
+  grid-area: box-left;
+}
+.box-middle {
+  grid-area: box-middle;
+}
+.box-right {
+  grid-area: box-right;
+}
+
+.top-box .box-right p {
+  width: 80%;
+}
 /* Features */
 #features img {
   width: 500px;
@@ -309,6 +336,7 @@ body #main {
   grid-template-areas:
     "top-left top-right"
     "bottom-left bottom-right";
+  margin-bottom: 6%;
 }
 
 .features-row img {
@@ -343,6 +371,7 @@ body #main {
   /* width: 60%; */
   padding: 0;
   margin-bottom: 7%;
+  margin-top: 5%;
 }
 
 .features-video iframe {
@@ -356,6 +385,32 @@ body #main {
   box-shadow: 0 3px 3px 3px #666;
 
   /* width: 60%; */
+  /* height: 40%; */
+}
+
+/* User Profiles feature */
+.profiles {
+  margin-bottom: 4%;
+  margin-top: 5%;
+}
+.profileHeadings {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.profileHeadings h3:hover {
+  color: #17375e;
+  cursor: pointer;
+}
+
+.profile-content {
+  margin-top: 5%;
+}
+
+.active {
+  color: #17375e;
+  font-weight: 500;
+  /* text-decoration: underline #fe5b2d; */
 }
 
 /* Resources */
@@ -402,6 +457,47 @@ body #main {
   background-color: rgb(180, 47, 10);
 }
 
+/* Request Project Package Form */
+#req-projectPackage-form {
+  display: grid;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px 2px #e5e5e5;
+  margin: 3.8em 0 5em 0;
+  padding: 0;
+  height: 11rem;
+}
+
+#req-projectPackage-form header {
+  color: #fff;
+  background: linear-gradient(rgba(18, 55, 97, 0.75), rgba(18, 55, 97, 0.75)),
+    url("images/pexels-andrea-piacquadio-3760067.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  padding: 5px 0 8px 0;
+  text-align: center;
+}
+
+.main-div {
+  text-align: center;
+  justify-content: center;
+  height: 1%;
+}
+
+.main-btn {
+  text-decoration: none;
+  background-color: #fe5b2d;
+  padding: 0.4rem;
+  border-radius: 0.8rem;
+  color: #ffff;
+  font-size: 1rem;
+  border: 2px #000000;
+  text-align: center;
+  justify-content: center;
+  margin: 1rem auto;
+}
+
 /* Contact us */
 #contact {
   display: grid;
@@ -426,18 +522,18 @@ body #main {
 
 .outer-box-contact {
   margin: 3rem 0 8rem 0;
-  display: grid;
+  /* display: grid; */
   justify-self: center;
   text-align: center;
-  grid-template-areas: "left-box right-box";
+  /* grid-template-areas: "left-box right-box"; */
   width: 80%;
 }
 
 .left-box {
-  margin: 60px 10px 10px 18px;
-  width: 80%;
-  padding: 10px 66px 0 20px;
-  box-shadow: 3px 0 0 0 #e5e5e5;
+  margin: 0 auto;
+  width: 60%;
+  padding: 20px 0;
+  /* box-shadow: 3px 0 0 0 #e5e5e5; */
 }
 
 .left-box textarea {
@@ -476,7 +572,7 @@ body #main {
   background-color: rgb(180, 47, 10);
 }
 
-.right-box {
+/* .right-box {
   margin: 147px 0px 0px 41px;
 }
 
@@ -489,11 +585,22 @@ body #main {
 .right-box img {
   float: left;
   margin: 0 6% 0 30%;
-}
+} */
 
 .icon-description {
   float: left;
   margin: 1% 0 0 2%;
+}
+
+/* map */
+#map {
+  display: flex;
+}
+
+#map iframe {
+  width: 60%;
+  padding: 1rem;
+  margin: auto;
 }
 
 footer {
@@ -532,17 +639,24 @@ footer li {
   font-size: 4em;
   text-align: center;
   padding: 20rem 5rem;
+  line-height: 1em;
   color: #ffffff;
   background-color: #17375e;
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .search-guides h2 {
-  font-size: 3.9rem;
+  font-size: 4rem;
+  line-height: 1em;
   text-align: center;
   margin-top: 10%;
+  font-weight: 570;
   margin-bottom: 7%;
   color: #fe5b2d;
+}
+
+.search-guides h3 {
+  font-size: 1.5rem;
 }
 
 .search-bar {
@@ -583,9 +697,9 @@ footer li {
 }
 
 .guides-tutorials {
-  display: grid;
-  width: 95%;
-  text-align: left;
+  /* display: grid; */
+  width: 89%;
+  text-align: center;
   justify-content: center;
   grid-template-areas:
     "guide0 guide1 guide2 guide3"
@@ -602,35 +716,99 @@ footer li {
   padding-top: 0;
 }
 
+.guides-tutorials h1:hover {
+  cursor: pointer;
+}
+
+.guides-tutorials h1 .fa-angle-down {
+  transform: rotate(0deg);
+  transition: transform 0.2s linear;
+}
+
+.guides-tutorials h1 .fa-angle-down.open {
+  transform: rotate(180deg);
+  transition: transform 0.2s linear;
+}
+
+.topics h1 .fa-angle-down {
+  transform: rotate(0deg);
+  transition: transform 0.2s linear;
+}
+
+.topics h1 .fa-angle-down.open {
+  transform: rotate(180deg);
+  /* transition: ; */
+}
+
 .guides-tutorials p {
-  font-size: 1em;
+  font-size: 1.3em;
   line-height: 3rem;
 }
 
+.hide {
+  display: none;
+}
+
 #guides {
-  width: 80%;
+  /* width: 80%; */
+}
+
+.guide1 {
+  /* margin-left: 5%; */
+}
+
+.guide1 .col {
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+  width: 100%;
+}
+
+.guide1 .col li {
+  text-decoration: none;
+}
+
+.guide2 {
+  /* margin-top: 19%;
+  margin-left: -18%; */
+}
+
+.guide2 .col {
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+  /* width: 140%; */
 }
 
 .guide3 p {
-  width: 79%;
+  /* width: 79%; */
 }
 
 .guide7 p {
-  width: 78%;
+  /* width: 78%; */
 }
 
 .topic {
   width: 90%;
   margin: auto;
   line-height: 3rem;
-  text-align: left;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
 }
 
 .topic h1 {
   font-size: 4rem;
+  line-height: 1em;
   text-align: center;
   margin-bottom: 5rem;
   color: #fe5b2d;
+  font-weight: 500;
+}
+
+.topics1 h1 {
+  text-align: center;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
 }
 
 .topics h1 {
@@ -638,18 +816,48 @@ footer li {
   text-align: left;
   margin-bottom: 2rem;
   color: #777;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.topics h1:hover {
+  cursor: pointer;
+}
+
+.topics h2 {
+  font-size: 1.3em;
+  text-align: left;
+  margin-bottom: 2rem;
+  color: #777;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+  font-weight: 500;
+}
+
+.topics h2:hover {
+  cursor: pointer;
+}
+
+.topics h3 {
+  font-size: 1.1em;
+  font-weight: 500;
 }
 
 .topics p {
   font-size: 1em;
   line-height: 3rem;
+  text-align: left;
 }
 
 .topics {
-  display: grid;
-  grid-template-columns: repeat(3, 4fr);
+  /* display: grid;
+  grid-template-columns: repeat(3, 4fr); */
+  justify-content: center;
+  text-align: center;
   grid-gap: 3rem;
-  text-align: left;
+  text-align: center;
   margin-left: 5%;
   margin-bottom: 10%;
 }
@@ -674,7 +882,7 @@ footer li {
   margin: auto;
 }
 
-/* .contact-support button {
+.contact-support button {
   font-size: 3rem;
   width: auto;
   margin: auto;
@@ -688,11 +896,16 @@ footer li {
   border: 2px #000000;
   margin-left: 5%;
   margin-bottom: 8%;
+  text-decoration: none;
+}
+.contact-support button a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .contact-support button:hover {
   background-color: rgb(180, 47, 10);
-} */
+}
 
 .right-box img:hover {
   filter: brightness(50%);
@@ -748,7 +961,7 @@ footer li {
 }
 
 .chat-header {
-  width: 100%;
+  width: 102%;
   background-color: #17375e;
   color: #ffffff;
   text-align: center;
@@ -758,7 +971,6 @@ footer li {
   align-self: center;
   justify-content: center;
   display: flex;
-  margin: 0 auto;
 }
 
 .chat-area {
@@ -832,6 +1044,50 @@ footer li {
   align-items: center;
   border-radius: 5px;
   opacity: 0.7;
+}
+
+/* Walkthrough pages */
+#title-walk {
+  font-size: 4em;
+  text-align: center;
+  padding: 6rem 5rem;
+  line-height: 1em;
+  color: #ffffff;
+  background-color: #17375e;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+#title-walk p {
+  font-size: 0.5em;
+  color: #fe5b2d;
+}
+
+.walkthrough {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.walkthrough h3 {
+  font-size: 1.2em;
+  margin-bottom: 3rem;
+}
+
+.walkthrough label {
+  font-size: 1.5rem;
+}
+
+.steps h1 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.walkthrough-img img {
+  width: 90%;
+}
+
+.walkthrough-img.done img {
+  width: 45%;
+  margin: 0 auto;
 }
 
 @media (max-width: 1680px) {
@@ -944,7 +1200,7 @@ footer li {
   .left-box .send {
     width: auto;
   }
-
+  /* 
   .right-box {
     display: grid;
     padding: 0;
@@ -957,7 +1213,7 @@ footer li {
   .right-box img {
     float: none;
     margin: 0;
-  }
+  } */
 
   .icon-description {
     margin: 0 auto;
@@ -1030,6 +1286,35 @@ footer li {
     margin-left: 5%;
     margin-bottom: 10%;
   }
+
+  .guide1 {
+    margin-left: 0;
+  }
+
+  .guide1 .col {
+    width: 140%;
+  }
+
+  .guide2 {
+    margin: 0;
+  }
+
+  .profileHeadings {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    /* justify-self: center; */
+  }
+
+  .profileHeadings h3 {
+    font-size: 0.5rem;
+    margin-top: 1rem;
+    /* text-align: center; */
+  }
+}
+@media (max-width: 900px) {
+  .coming-soon-tag img {
+    width: -webkit-fill-available;
+  }
 }
 
 @media (max-width: 780px) {
@@ -1059,6 +1344,10 @@ footer li {
   .features-video iframe {
     width: 55%;
     height: 40%;
+  }
+
+  #map {
+    display: grid;
   }
 }
 
@@ -1094,11 +1383,20 @@ footer li {
   .close-burger {
     display: inline;
   }
+
+  .profileHeadings {
+    display: grid;
+    grid-template-columns: 300px;
+  }
+
+  #title-walk {
+    font-size: 2em;
+  }
 }
 
 @media (max-width: 500px) {
   #banner-heading {
-    padding: 7em 0 20em 0;
+    padding: 7em 0 26em 0;
     background-size: cover;
     height: 48vh;
     -webkit-background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -1169,6 +1467,10 @@ footer li {
     font-size: 2em;
   }
 
+  .search-guides h3 {
+    font-size: 5em;
+  }
+
   .search-guides label {
     font-size: 0.9em;
   }
@@ -1215,5 +1517,29 @@ footer li {
     bottom: 120px;
     right: 10%;
     width: 80vw;
+  }
+
+  .guide1 .col {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .guide2 .col {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #map {
+    display: grid;
+  }
+
+  #map iframe {
+    width: 70%;
+    height: auto;
+    padding: 0.3rem;
+  }
+
+  #title-walk {
+    font-size: 2em;
   }
 }
